@@ -1,0 +1,12 @@
+https://api.themoviedb.org/3/search/movie  -- SearchMovie
+https://api.themoviedb.org/3/movie/popular  -- popular
+https://api.themoviedb.org/3/movie/now_playing --now_playing
+https://api.themoviedb.org/3/movie/upcoming   --upcoming
+ https://api.themoviedb.org/3/movie/top_rated  -- toprated
+
+b8f4b72361ab64dd9110ee60c7c3a5d6
+
+const url = `https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1&api_key=${API_KEY}`;
+
+
+https://api.themoviedb.org/3/movie/now_playing?&api_key=${API_KEY}
