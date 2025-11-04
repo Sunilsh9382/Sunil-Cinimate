@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import backup from "../assets/images/backup.png";
 
+const API_KEY = process.env.REACT_APP_API_KEY;
 export const MovieDetail = () => {
-  const API_KEY = process.env.REACT_APP_API_KEY;
-
   const params = useParams();
   const [data, setData] = useState({});
   const image = data.poster_path
@@ -90,7 +89,6 @@ export const MovieDetail = () => {
                 href={`https://www.imdb.com/title/${data.imdb_id}`}
                 target="_blank"
                 rel="noreferrer"
-               
                 className="text-black-600 dark:text-blue-400"
               >
                 {data.imdb_id}
